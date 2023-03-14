@@ -7,8 +7,10 @@ internal class Program
         Console.WriteLine("Welcome to OOPs Concept");
 
         Car car = new Car();
+        Console.WriteLine("Car barnd is " + car.brand);
+        car.Type();
         car.Color = "red";
-        car.CarProperties(8000, "VolksVagen");
+        car.CarProperties(800000, "Vento");
         Console.ReadLine();
     }
 }
