@@ -1,4 +1,5 @@
 ﻿using OOPsConcept;
+using static OOPsConcept.Abstraction;
 using static OOPsConcept.OverRiding;
 
 internal class Program
@@ -6,7 +7,8 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.WriteLine("Welcome to OOPs Concept");
-        Console.WriteLine("\n1:Object and Class\n2:Inheritance\n3:Polymorphism\n4:Encapsulation\n5:Encapsulation");
+        Console.WriteLine("\n1:Object and Class\n2:Inheritance\n3:Polymorphism\n4:Encapsulation\n5:Encapsulation" +
+            "\n6:Abstraction");
         int options = Convert.ToInt32(Console.ReadLine());
 
         switch (options)
@@ -41,7 +43,11 @@ internal class Program
                 encapsulation.Id = 1050;
                 Console.WriteLine("Employee Id "+ encapsulation.Id + " Name " + encapsulation.GetName());
                 break;
-
+            case 6:
+                EmployeeDetails employeeDetails = new EmployeeDetails();
+                employeeDetails.EmployeeName();
+                Console.WriteLine(employeeDetails.EmployeeSalary());
+                break;
 
         }
         Console.ReadLine();
