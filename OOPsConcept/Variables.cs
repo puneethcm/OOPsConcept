@@ -9,10 +9,15 @@ namespace OOPsConcept
 		{
 			int result; // local variable
 			result = a + b;
-			Console.WriteLine("Result" + result);
+			Console.WriteLine("Result " + result);
 		}
-
-		static string place = "Banglore";
+		public static void diffrence()
+		{
+			int diff;
+			diff = Math.Abs(a - b);
+			Console.WriteLine("Diffence is " + diff);
+		}
+		static string place = "Banglore"; // static variable
 		public static void Places()
 		{
 			Console.WriteLine("I live in " + place);

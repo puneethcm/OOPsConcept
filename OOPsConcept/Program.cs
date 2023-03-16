@@ -8,7 +8,7 @@ internal class Program
     {
         Console.WriteLine("Welcome to OOPs Concept");
         Console.WriteLine("\n1:Object and Class\n2:Inheritance\n3:Polymorphism\n4:Encapsulation\n5:Encapsulation" +
-            "\n6:Abstraction");
+            "\n6:Abstraction\n7:Variables");
         int options = Convert.ToInt32(Console.ReadLine());
 
         switch (options)
@@ -47,6 +47,12 @@ internal class Program
                 EmployeeDetails employeeDetails = new EmployeeDetails();
                 employeeDetails.EmployeeName();
                 Console.WriteLine(employeeDetails.EmployeeSalary());
+                break;
+            case 7:
+                Variables variables = new Variables();
+                variables.Add();
+                Variables.Places();
+                Variables.diffrence();
                 break;
 
         }
