@@ -8,7 +8,7 @@ internal class Program
     {
         Console.WriteLine("Welcome to OOPs Concept");
         Console.WriteLine("\n1:Object and Class\n2:Inheritance\n3:Polymorphism\n4:Encapsulation\n5:Encapsulation" +
-            "\n6:Abstraction\n7:Variables");
+            "\n6:Abstraction\n7:Variables\n8:Types of method");
         int options = Convert.ToInt32(Console.ReadLine());
 
         switch (options)
@@ -53,6 +53,14 @@ internal class Program
                 variables.Add();
                 Variables.Places();
                 Variables.diffrence();
+                break;
+            case 8:
+                TypesOfMethods methods = new TypesOfMethods();
+                methods.Person();
+                methods.PersonName("Abhishek");
+                Console.WriteLine(methods.Multiply(5, 4));
+                TypesOfMethods.Car();
+                TypesOfMethods.PersonLastName("Karthik");
                 break;
 
         }
