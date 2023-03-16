@@ -1,6 +1,7 @@
 ﻿using OOPsConcept;
 using static OOPsConcept.Abstraction;
 using static OOPsConcept.OverRiding;
+using static OOPsConcept.ValueAndReferenceType;
 
 internal class Program
 {
@@ -8,7 +9,7 @@ internal class Program
     {
         Console.WriteLine("Welcome to OOPs Concept");
         Console.WriteLine("\n1:Object and Class\n2:Inheritance\n3:Polymorphism\n4:Encapsulation\n5:Encapsulation" +
-            "\n6:Abstraction\n7:Variables\n8:Types of method");
+            "\n6:Abstraction\n7:Variables\n8:Types of method\n9:Value and Reference type");
         int options = Convert.ToInt32(Console.ReadLine());
 
         switch (options)
@@ -61,6 +62,19 @@ internal class Program
                 Console.WriteLine(methods.Multiply(5, 4));
                 TypesOfMethods.Car();
                 TypesOfMethods.PersonLastName("Karthik");
+                break;
+            case 9:
+                int i = 10;
+                Console.WriteLine(i);
+                ValueAndReferenceType.ValueType.ChangeValue(i);
+                Console.WriteLine(i);
+
+                ValueAndReferenceType value = new ValueAndReferenceType();
+                Student std2 = new Student();
+                std2.Name = "Lucky";
+                Console.WriteLine("Before change " + std2.Name);
+                ValueAndReferenceType.ReferenceType.ChangeReferenceValue(std2);
+                Console.WriteLine("After change " + std2.Name);
                 break;
 
         }
