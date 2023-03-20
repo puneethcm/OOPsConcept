@@ -1,13 +1,19 @@
 ﻿using OOPsConcept;
+<<<<<<< HEAD
 using static OOPsConcept.Abstraction;
 using static OOPsConcept.OverRiding;
 using static OOPsConcept.ValueAndReferenceType;
+=======
+using static OOPsConcept.TypesOfInheritance;
+using static OOPsConcept.TypesOfInheritance.ClassB;
+>>>>>>> Inheritance
 
 internal class Program
 {
     private static void Main(string[] args)
     {
         Console.WriteLine("Welcome to OOPs Concept");
+<<<<<<< HEAD
         Console.WriteLine("\n1:Object and Class\n2:Inheritance\n3:Polymorphism\n4:Encapsulation\n5:Encapsulation" +
             "\n6:Abstraction\n7:Variables\n8:Types of method\n9:Value and Reference type");
         int options = Convert.ToInt32(Console.ReadLine());
@@ -21,12 +27,20 @@ internal class Program
                 vehicle.brand = "Volks Wagen";
                 break;
             case 2:
+=======
+        Console.WriteLine("Choose Type of Inheritance \n1:single Inheritance\n2:Hierarchical Inhritance\n3:MultiLevel Inheritance ");
+        int option = Convert.ToInt32(Console.ReadLine());
+        switch (option)
+        {
+            case 1:
+>>>>>>> Inheritance
                 Car car = new Car();
                 Console.WriteLine("Car barnd is " + car.brand);
                 car.Type();
                 car.Color = "red";
                 car.CarProperties(800000, "Vento");
                 break;
+<<<<<<< HEAD
             case 3:
                 OverLoading overLoading = new OverLoading();
                 Console.WriteLine(overLoading.Add(5, 7));
@@ -77,6 +91,22 @@ internal class Program
                 Console.WriteLine("After change " + std2.Name);
                 break;
 
+=======
+            case 2:
+                ClassA classA = new ClassA();
+                Console.WriteLine(classA.msg());
+                ClassB classB = new ClassB();
+                Console.WriteLine(classA.msg());
+                Console.WriteLine(classB.info());
+                ClassC classC = new ClassC();
+                Console.WriteLine(classA.msg());
+                Console.WriteLine(classC.getinfo());
+                break;
+            case 3:
+                Animal animal = new Animal();
+                animal.animal();
+                break;
+>>>>>>> Inheritance
         }
         Console.ReadLine();
     }
