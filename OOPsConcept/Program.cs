@@ -11,7 +11,7 @@ internal class Program
     {
         Console.WriteLine("Welcome to OOPs Concept");
         Console.WriteLine("\n1:Object and Class\n2:Inheritance\n3:Polymorphism\n4:Encapsulation" +
-            "\n5:Abstraction\n6:Variables\n7:Types of method\n8:Value and Reference type");
+            "\n5:Abstraction\n6:Variables\n7:Types of method\n8:Value and Reference type\n9:Delete array element");
         int options = Convert.ToInt32(Console.ReadLine());
 
         switch (options)
@@ -71,6 +71,20 @@ internal class Program
                 Console.WriteLine("Before change " + std2.Name);
                 ValueAndReferenceType.ReferenceType.ChangeReferenceValue(std2);
                 Console.WriteLine("After change " + std2.Name);
+                break;
+            case 9:
+                Console.WriteLine("Enter the elements to add in array");
+                int size = Convert.ToInt32(Console.ReadLine());
+                int[] arr = new int[size];
+                Console.WriteLine("Please enter element one by one");
+                for(int a=0; a < arr.Length; a++)
+                {
+                    arr[a] = Convert.ToInt32(Console.ReadLine());
+                    Console.Write(arr[a]+" ");
+                }
+                Console.WriteLine("Pick one element you want to delete");
+                int delete = Convert.ToInt32(Console.ReadLine());
+                DeletElement.DeleteElement(arr,delete);
                 break;
 
         }
