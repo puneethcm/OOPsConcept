@@ -4,6 +4,7 @@ using static OOPsConcept.OverRiding;
 using static OOPsConcept.ValueAndReferenceType;
 using static OOPsConcept.TypesOfInheritance;
 using static OOPsConcept.TypesOfInheritance.ClassB;
+using static OOPsConcept.Interface;
 
 internal class Program
 {
@@ -11,7 +12,8 @@ internal class Program
     {
         Console.WriteLine("Welcome to OOPs Concept");
         Console.WriteLine("\n1:Object and Class\n2:Inheritance\n3:Polymorphism\n4:Encapsulation" +
-            "\n5:Abstraction\n6:Variables\n7:Types of method\n8:Value and Reference type\n9:Delete array element");
+            "\n5:Abstraction\n6:Variables\n7:Types of method\n8:Value and Reference type\n9:Delete array element\n10:Interface" +
+            "\n11:Constructor");
         int options = Convert.ToInt32(Console.ReadLine());
 
         switch (options)
@@ -85,6 +87,18 @@ internal class Program
                 Console.WriteLine("Pick one element you want to delete");
                 int delete = Convert.ToInt32(Console.ReadLine());
                 DeletElement.DeleteElement(arr,delete);
+                break;
+            case 10:
+                Emp employee = new Emp();
+                employee.Name();
+                employee.Salary();
+                break;
+            case 11:
+                Constructor constructor = new Constructor();
+                constructor.Addd();
+
+                Constructor2 constructor2 = new Constructor2();
+                constructor2.Multi();
                 break;
 
         }
