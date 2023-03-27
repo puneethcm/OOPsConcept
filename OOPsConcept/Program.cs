@@ -1,4 +1,4 @@
-﻿using OOPsConcept;
+using OOPsConcept;
 using static OOPsConcept.Abstraction;
 using static OOPsConcept.OverRiding;
 using static OOPsConcept.ValueAndReferenceType;
@@ -97,7 +97,7 @@ internal class Program
                 Constructor constructor = new Constructor();
                 constructor.Addd();
 
-                Constructor2 constructor2 = new Constructor2();
+                Constructor2 constructor2 = new Constructor2(5,4);
                 constructor2.Multi();
                 break;
 
