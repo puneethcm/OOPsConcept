@@ -11,11 +11,12 @@ namespace OOPsConcept
 			//Dictionary<int, string> dictionary = new Dictionary<int, string>();
             dictionary.Add(1, "Puneeth");
             dictionary.Add(2, "Prashanth");
-            dictionary.Add(3, "Prathap");
+            dictionary.Add(3, "Karthick");
+            dictionary.Add(4, "Abhiskek");
             Display();
 
 			Console.WriteLine("\nafter update");
-			dictionary[4] = "Nithin";
+			dictionary[5] = "Nithin";
 			Display();
 
 			Console.WriteLine("\nafter removed");
