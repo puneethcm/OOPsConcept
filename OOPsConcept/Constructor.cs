@@ -18,16 +18,15 @@ namespace OOPsConcept
 	}
     public class Constructor2
     {
-        int a, b,first,second;
-        public Constructor2(int a, int b)
+        string first,last;
+        public Constructor2(string first, string last)
         {
-			this.first = a;
-			this.second = b;
+			this.first = first;
+			this.last = last;
         }
-        public void Multi()
+        public void Name()
         {
-            int sum = first * second;
-            Console.WriteLine(sum);
+            Console.WriteLine("First Name: "+ first +"Last Name: "+ last);
         }
 
     }
