@@ -13,7 +13,7 @@ internal class Program
         Console.WriteLine("Welcome to OOPs Concept");
         Console.WriteLine("\n1:Object and Class\n2:Inheritance\n3:Polymorphism\n4:Encapsulation" +
             "\n5:Abstraction\n6:Variables\n7:Types of method\n8:Value and Reference type\n9:Delete array element\n10:Interface" +
-            "\n11:Constructor\n12:CRUD operations in Dictionary");
+            "\n11:Constructor\n12:CRUD operations in Dictionary\n13:Array List");
         int options = Convert.ToInt32(Console.ReadLine());
 
         switch (options)
@@ -103,6 +103,16 @@ internal class Program
             case 12:
                 Dictionary dictionary = new Dictionary();
                 dictionary.DictionaryDemo();
+                break;
+            case 13:
+                ArrayListClass arrayListClass = new ArrayListClass();
+                arrayListClass.AddArrayList();
+                arrayListClass.UpdateItem();
+                arrayListClass.InsertItem();
+                arrayListClass.RemoveItem();
+                break;
+            default:
+                Console.WriteLine("Please choose any number in given options");
                 break;
         }
         Console.ReadLine();
