@@ -97,7 +97,7 @@ internal class Program
                 Constructor constructor = new Constructor();
                 constructor.Addd();
 
-                Constructor2 constructor2 = new Constructor2();
+                Constructor2 constructor2 = new Constructor2(5,4);
                 constructor2.Multi();
                 break;
 
